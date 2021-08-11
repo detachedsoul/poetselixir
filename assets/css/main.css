@@ -1,0 +1,258 @@
+:root {
+    --main-blue: #6664be;
+    /* --black: #292b41; */
+    --green: #42c284;
+    --dark-blue: #2726a4;
+    /* --color-1: #d7d7f0; */
+    --orange: #ff7c4a;
+}
+
+header {
+    top: 0;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+}
+
+input, 
+button,
+textarea,
+.nav-link-icon,
+.fi-rr-copyright {
+    font-size: 1rem;
+}
+
+.mobile-nav,
+.index-post-container,
+.index-category-container,
+.footer-container,
+.copyright {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.logo {
+    width: 120px;
+    height: 3%;
+}
+
+.nav-search-toggle {
+    font-size: 1.2rem;
+}
+
+.nav-toggle {
+    padding: 1rem 0;
+}
+
+.nav-toggle-icon,
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+    width: 30px;
+    height: 1px;
+}
+
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+    content: '';
+    top: -.6rem;
+}
+
+.nav-toggle-icon::after {
+    top: .6rem;
+}
+
+.nav-toggle-close .nav-toggle-icon {
+    background-color: transparent;
+}
+
+.nav-toggle-close .nav-toggle-icon::before,
+.nav-toggle-close .nav-toggle-icon::after {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.nav-toggle-close .nav-toggle-icon::before {
+    transform: rotate(-45deg);
+}
+
+.nav-container {
+    width: 80%;
+    left: 0;
+    transform: translateX(-100%);
+    top: 3.7rem;
+}
+
+.nav-content-open {
+    transform: translateX(0);
+}
+
+.nav-content-container {
+    height: 100vh;
+    padding-left: .5rem;
+}
+
+.nav-links-container,
+.section-intro,
+.post-details,
+.copyright {
+    padding-bottom: 1rem;
+}
+
+.nav-links-container,
+.copyright {
+    padding-top: 1rem;
+}
+
+.nav-link:hover,
+.nav-link-active {
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+
+.nav-link:hover,
+.nav-link-active,
+.dropdown-link:hover {
+    background-color: var(--blue);
+}
+
+.dropdown {
+    width: calc(100% - 1rem);
+    right: .5rem;
+    z-index: 1024;
+    top: 120%;
+    transform: rotateX(90deg);
+    border: 1px solid rgba(102 100 190 / 50%);
+}
+
+.dropdown,
+.nav-container,
+.search-container {
+    transform-origin: 0 0;
+}
+
+.dropdown-items:first-child .dropdown-link {
+    border-top-left-radius: .7rem;
+    border-top-right-radius: .7rem;
+}
+
+.dropdown-items:last-child .dropdown-link {
+    border-bottom-left-radius: .7rem;
+    border-bottom-right-radius: .7rem;
+}
+
+.dropdown-link {
+    padding: .5rem 1rem;
+}
+
+.dropdown-link:hover {
+    padding-left: 2rem;
+}
+
+.dropdown-active {
+    transform: rotateX(0);
+}
+
+.search-container {
+    width: calc(100% - 2rem);
+    left: 1rem;
+    -webkit-transform: translateY(-10rem);
+    -moz-transform: translateY(-10rem);
+    -ms-transform: translateY(-10rem);
+    -o-transform: translateY(-10rem);
+        transform: translateY(-10rem);
+}
+
+.show-search-container {
+    -webkit-transform: translateY(.6rem);
+    -moz-transform: translateY(.6rem);
+    -ms-transform: translateY(.6rem);
+    -o-transform: translateY(.6rem);
+        transform: translateY(.6rem);
+}
+
+.search-input {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-right-color: transparent;
+    border: 1px solid rgba(102 100 190 / 50%);
+}
+
+.search-input:focus {
+    box-shadow: 0px 0px 0px 4px rgb(102 100 190 / 10%);
+}
+
+.search-btn {
+    background-color: var(--blue);
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.hero-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.8),
+                                 rgba(0, 0, 0, 0.8)), 
+                                 url(../img/hero-bg.jpg);
+    min-height: calc(100vh - 40vh);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-content,
+.section-intro {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.section {
+    margin-top: 3rem;
+}
+
+.post-img {
+    height: 200px;
+}
+
+.author-img {
+    left: 1rem;
+    bottom: -.8rem;
+}
+
+.post-title {
+    margin-top: .5rem;
+}
+
+.discover-more {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+
+.footer-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer-icon {
+    padding: .5rem .8rem;
+}
+
+.footer-icon .fa-facebook-f {
+    padding-left: .25rem;
+    padding-right: .25rem;
+}
+
+.footer-icon .fa-whatsapp,
+.footer-icon .fa-linkedin-in {
+    padding-left: .1rem;
+    padding-right: .1rem;
+}
+
+.to-top {
+    padding: .5rem .7rem;
+    bottom: 2rem;
+    right: -100%;
+}
+
+.show-to-top {
+    right: 1rem;
+}
