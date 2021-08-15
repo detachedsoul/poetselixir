@@ -25,7 +25,8 @@ textarea,
 .index-post-container,
 .index-category-container,
 .footer-container,
-.copyright {
+.copyright,
+.category-desc {
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -110,7 +111,8 @@ textarea,
 
 .nav-link:hover,
 .nav-link-active,
-.dropdown-link:hover {
+.dropdown-link:hover,
+.dropdown-link-active {
     background-color: var(--blue);
 }
 
@@ -143,12 +145,19 @@ textarea,
     padding: .5rem 1rem;
 }
 
-.dropdown-link:hover {
+.dropdown-link:hover,
+.dropdown-link-active {
     padding-left: 2rem;
 }
 
 .dropdown-active {
     transform: rotateX(0);
+}
+
+.dropdown-link-active,
+.pagination-divider,
+.breadcrumb-active {
+    pointer-events: none;
 }
 
 .search-container {
@@ -162,11 +171,11 @@ textarea,
 }
 
 .show-search-container {
-    -webkit-transform: translateY(.6rem);
-    -moz-transform: translateY(.6rem);
-    -ms-transform: translateY(.6rem);
-    -o-transform: translateY(.6rem);
-        transform: translateY(.6rem);
+    -webkit-transform: translateY(.9rem);
+    -moz-transform: translateY(.9rem);
+    -ms-transform: translateY(.9rem);
+    -o-transform: translateY(.9rem);
+        transform: translateY(.9rem);
 }
 
 .search-input {
@@ -181,11 +190,15 @@ textarea,
 }
 
 .search-btn {
-    background-color: var(--blue);
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
     padding-right: 1rem;
     padding-left: 1rem;
+}
+
+.search-btn,
+.to-top {
+    background-color: var(--blue);
 }
 
 .hero-container {
@@ -210,11 +223,6 @@ textarea,
 
 .post-img {
     height: 200px;
-}
-
-.author-img {
-    left: 1rem;
-    bottom: -.8rem;
 }
 
 .post-title {
@@ -255,4 +263,21 @@ textarea,
 
 .show-to-top {
     right: 1rem;
+}
+
+.pagination-container {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--grey);
+}
+
+.pagination-link {
+    padding: 1rem;
+}
+
+.pagination-link:hover,
+.pagination-link.active {
+    border-top: 3px solid var(--blue);
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/img/logo.png">
 
-    <title>Poet's Elixir &mdash; Home</title>
+    <title>Poet's Elixir &mdash; Category</title>
 
     <!-- Preload stylesheets and scripts -->
     <link rel="preload" href="assets/css/preloader.css" as="style">
@@ -71,7 +71,7 @@
                 <ul class="nav-links-container flex flex-column gap-half">
 
                     <li class="nav-item list-style-none">
-                        <a class="nav-link black flex align-center gap-1 nav-link-active" href="/">
+                        <a class="nav-link black flex align-center gap-1" href="/">
                             <i class="fr fi-rr-home nav-link-icon relative"></i>
                             Home
                         </a>
@@ -79,7 +79,7 @@
 
                     <li class="nav-item list-style-none relative">
 
-                        <a class="nav-link dropdown-toggle black flex align-center gap-1" href="javascript:void(0)">
+                        <a class="nav-link dropdown-toggle black flex align-center gap-1 nav-link-active" href="javascript:void(0)">
                             <i class="fr fi-rr-settings nav-link-icon relative"></i>
                             Categories
                         </a>
@@ -95,7 +95,7 @@
                                 </li>
             
                                 <li class="list-style-none dropdown-items">
-                                    <a class="dropdown-link black d-block" href="category.html">
+                                    <a class="dropdown-link black d-block dropdown-link-active" href="category.html">
                                         Depression
                                     </a>
                                 </li>
@@ -153,150 +153,40 @@
     </header>
 
 
-    <!-- Hero Container -->
-    <div class="hero-container flex place-center main-bg white">
-
-        <div class="hero-content">
-
-            <p>
-                <i class="fas fa-quote-left fa-fw"></i>
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta unde consequuntur esse impedit enim autem consequatur voluptatum est facere quam sunt voluptatem laborum necessitatibus reprehenderit quaerat dolor ab, laboriosam at.
-
-                <i class="fas fa-quote-right fa-fw"></i>
-            </p>
-
-            <p>
-                &mdash; Anonymous
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <!-- Main Content -->
+    <!-- Main content -->
     <main>
 
-        <section class="section">
+        <section class="section mb-2">
 
-            <div class="section-intro flex align-center flex-wrap justify-between gap-half border-bottom-grey">
-
-                <h2 class="header">
-                    Recent Posts
-                </h2>
+            <div class="section-intro flex align-center flex-wrap gap-half border-bottom-grey">
 
                 <a class="blue link" href="">
-                    View all
-                    <i class="fas fa-arrow-right fa-fw"></i>
+                    Home
+                </a>
+
+                <i class="fas fa-angle-right blue"></i>
+
+                <a class="blue link" href="javascript:void(0)">
+                    Category
+                </a>
+
+                <i class="fas fa-angle-right blue"></i>
+
+                <a class="black breadcrumb-active" href="">
+                    The Category
                 </a>
 
             </div>
 
-            <div class="index-post-container mt-2 mb-2 grid gap-2">
+            <div class="category-desc mt-2 mb-2">
 
-                <article>
-                    
-                    <img class="post-img w-100 border-7" src="assets/img/48082d4480908aa3ba49b7890f6693c1.jpg" alt="Flowers On Your Grave" width="100%" height="200" title="Flowers On Your Grave">
+                <h1 class="header">
+                    The Category
+                </h1>
 
-                    <div class="mt-1 flex align-center gap-1">
-
-                        <a class="blue link" href="/category">
-                            Sadness
-                        </a>
-
-                        &bull;
-
-                        <span>
-                            12 June, 2021
-                        </span>
-
-                    </div>
-
-                    <h2 class="post-title">
-                        <a class="black link" href="">
-                            Flowers On Your Grave
-                        </a>
-                    </h2>
-
-                    <div class="post-details border-bottom-grey">
-
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quasi optio laboriosam laudantium aliquid porro incidunt, esse nihil non a repudiandae cupiditate ex quam. Necessitatibus illo voluptatibus explicabo error atque.
-                        </p>
-
-                        <p>
-                            <a class="blue link flex align-center gap-half d-inline" href="/post">
-                                Continue Reading
-                                <i class="fas fa-fw fa-arrow-right"></i>
-                            </a>
-                        </p>
-
-                    </div>
-
-                </article>
-
-                <article>
-                    
-                    <img class="post-img w-100 border-7" src="assets/img/68c2fe8935e1de591ff8a50b38c12185.jpg" alt="Flowers On Your Grave" width="100%" height="200" title="Flowers On Your Grave">
-
-                    <div class="mt-1 flex align-center gap-1">
-
-                        <a class="blue link" href="/category">
-                            Depression
-                        </a>
-
-                        &bull;
-
-                        <span>
-                            12 March, 2021
-                        </span>
-
-                    </div>
-
-                    <h2 class="post-title">
-                        <a class="black link" href="">
-                            Flowers On Your Grave
-                        </a>
-                    </h2>
-
-                    <div class="post-details border-bottom-grey">
-
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quasi optio laboriosam laudantium aliquid porro incidunt, esse nihil non a repudiandae cupiditate ex quam. Necessitatibus illo voluptatibus explicabo error atque.
-                        </p>
-
-                        <p>
-                            <a class="blue link flex align-center gap-half d-inline" href="/post">
-                                Continue Reading
-                                <i class="fas fa-fw fa-arrow-right"></i>
-                            </a>
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-        <div class="discover-more flex place-content-center">
-            Discover More In . . .
-        </div>
-
-        <section class="section">
-
-            <div class="section-intro flex align-center flex-wrap justify-between gap-half border-bottom-grey">
-
-                <h2 class="header">
-                    Depression
-                </h2>
-
-                <a class="blue link" href="">
-                    View all
-                    <i class="fas fa-arrow-right fa-fw"></i>
-                </a>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi veritatis praesentium a non corrupti repellat sunt quo optio autem reprehenderit?
+                </p>
 
             </div>
 
@@ -309,7 +199,7 @@
                     <div class="mt-1 flex align-center gap-1">
 
                         <a class="blue link" href="/category">
-                            Depression
+                            Category
                         </a>
 
                         &bull;
@@ -350,7 +240,7 @@
                     <div class="mt-1 flex align-center gap-1">
 
                         <a class="blue link" href="/category">
-                            Depression
+                            Category
                         </a>
 
                         &bull;
@@ -391,75 +281,13 @@
                     <div class="mt-1 flex align-center gap-1">
 
                         <a class="blue link" href="/category">
-                            Depression
+                            Category
                         </a>
 
                         &bull;
 
                         <span>
                             12 March, 2021
-                        </span>
-
-                    </div>
-
-                    <h2 class="post-title">
-                        <a class="black link" href="">
-                            Flowers On Your Grave
-                        </a>
-                    </h2>
-
-                    <div class="post-details border-bottom-grey">
-
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quasi optio laboriosam laudantium aliquid porro incidunt, esse nihil non a repudiandae cupiditate ex quam. Necessitatibus illo voluptatibus explicabo error atque.
-                        </p>
-
-                        <p>
-                            <a class="blue link flex align-center gap-half d-inline" href="/post">
-                                Continue Reading
-                                <i class="fas fa-fw fa-arrow-right"></i>
-                            </a>
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-        <section class="section">
-
-            <div class="section-intro flex align-center flex-wrap justify-between gap-half border-bottom-grey">
-
-                <h2 class="header">
-                    Heartbreak
-                </h2>
-
-                <a class="blue link" href="">
-                    View all
-                    <i class="fas fa-arrow-right fa-fw"></i>
-                </a>
-
-            </div>
-
-            <div class="index-category-container mt-2 mb-2 grid gap-2">
-
-                <article>
-                    
-                    <img class="post-img w-100 border-7" src="assets/img/a8f88bdde1e75dce8f6f15882d5fb95b.jpg" alt="Flowers On Your Grave" width="100%" height="200" title="Flowers On Your Grave">
-
-                    <div class="mt-1 flex align-center gap-1">
-
-                        <a class="blue link" href="/category">
-                            Heartbreak
-                        </a>
-
-                        &bull;
-
-                        <span>
-                            12 June, 2021
                         </span>
 
                     </div>
@@ -494,7 +322,7 @@
                     <div class="mt-1 flex align-center gap-1">
 
                         <a class="blue link" href="/category">
-                            Heartbreak
+                            Category
                         </a>
 
                         &bull;
@@ -530,12 +358,53 @@
 
                 <article>
                     
-                    <img class="post-img w-100 border-7" src="assets/img/68c2fe8935e1de591ff8a50b38c12185.jpg" alt="Flowers On Your Grave" width="100%" height="200" title="Flowers On Your Grave">
+                    <img class="post-img w-100 border-7" src="assets/img/48082d4480908aa3ba49b7890f6693c1.jpg" alt="Flowers On Your Grave" width="100%" height="200" title="Flowers On Your Grave">
 
                     <div class="mt-1 flex align-center gap-1">
 
                         <a class="blue link" href="/category">
-                            Heartbreak
+                            Category
+                        </a>
+
+                        &bull;
+
+                        <span>
+                            12 June, 2021
+                        </span>
+
+                    </div>
+
+                    <h2 class="post-title">
+                        <a class="black link" href="">
+                            Flowers On Your Grave
+                        </a>
+                    </h2>
+
+                    <div class="post-details border-bottom-grey">
+
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quasi optio laboriosam laudantium aliquid porro incidunt, esse nihil non a repudiandae cupiditate ex quam. Necessitatibus illo voluptatibus explicabo error atque.
+                        </p>
+
+                        <p>
+                            <a class="blue link flex align-center gap-half d-inline" href="/post">
+                                Continue Reading
+                                <i class="fas fa-fw fa-arrow-right"></i>
+                            </a>
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article>
+                    
+                    <img class="post-img w-100 border-7" src="assets/img/3e397c1bfceba15f719806e4f7d5f236.jpg" alt="Flowers On Your Grave" width="100%" height="200" title="Flowers On Your Grave">
+
+                    <div class="mt-1 flex align-center gap-1">
+
+                        <a class="blue link" href="/category">
+                            Category
                         </a>
 
                         &bull;
@@ -559,9 +428,9 @@
                         </p>
 
                         <p>
-                            <a class="blue link flex align-center gap-half" href="/post">
+                            <a class="blue link flex align-center gap-half d-inline" href="/post">
                                 Continue Reading
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fas fa-fw fa-arrow-right"></i>
                             </a>
                         </p>
 
@@ -573,8 +442,53 @@
 
         </section>
 
-    </main>
+        <div class="pagination-container flex align-center justify-between flex-wrap mb-2 gap-1">
 
+            <a class="black" href="">
+                <i class="fas fa-arrow-left fa-fw"></i> Previous
+            </a>
+
+            <ul class="pagination-links-container flex justify-between align-center gap-half flex-wrap">
+
+                <li class="list-style-none">
+                    <a class="pagination-link black" href="">
+                        1
+                    </a>
+                </li>
+
+                <li class="list-style-none">
+                    <a class="pagination-link black active" href="">
+                        2
+                    </a>
+                </li>
+
+                <li class="list-style-none">
+                    <a class="pagination-link pagination-divider black" href="">
+                        &bull; &bull; &bull;
+                    </a>
+                </li>
+
+                <li class="list-style-none">
+                    <a class="pagination-link black" href="">
+                        3
+                    </a>
+                </li>
+
+                <li class="list-style-none">
+                    <a class="pagination-link black" href="">
+                        4
+                    </a>
+                </li>
+
+            </ul>
+
+            <a class="black" href="">
+                Next <i class="fas fa-arrow-right fa-fw"></i>
+            </a>
+
+        </div>
+
+    </main>
 
     <footer>
         
