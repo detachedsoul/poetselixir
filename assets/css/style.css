@@ -30,7 +30,9 @@
     .search-btn,
     .index-post-container,
     .index-category-container,
-    .category-desc {
+    .footer-container,
+    .category-desc,
+    .account-container {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
@@ -58,11 +60,6 @@
 
 @media only screen and (min-width: 768px) {
 
-    /* header {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    } */
-
     .nav-container {
         width: 40%;
     }
@@ -72,15 +69,26 @@
         left: 15%;
     }
 
-    .hero-content {
+    .hero-content,
+    .form-sign-in-container {
         padding-left: 5%;
         padding-right: 5%;
     }
 
     .index-post-container,
     .index-category-container,
-    .footer-container {
+    .footer-container,
+    .form-sign-up-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-sign-up-container {
+        grid-gap: 1rem 2rem;
+	    gap: 1rem 2rem;
+    }
+
+    .form-sign-in-container {
+        margin-top: 1rem;
     }
 
 }
@@ -93,7 +101,14 @@
         -ms-flex-align: center;
             align-items: center;
         justify-content: space-between;
-        padding: .5rem 2%;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    header,
+    .nav-links-container {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     footer {
@@ -124,8 +139,6 @@
     }
 
     .nav-links-container {
-        padding-top: 0;
-        padding-bottom: 0;
         -ms-flex-direction: row;
             flex-direction: row;
     }
@@ -134,6 +147,11 @@
     .nav-link {
         grid-gap: .5rem;
             gap: .5rem;
+    }
+
+    .nav-link {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .nav-link,
@@ -146,11 +164,12 @@
     .nav-link.nav-link-active {
         color: var(--blue);
         background-color: transparent;
+        border-bottom: 3px solid var(--blue);
     }
 
     .dropdown {
         width: 150%;
-        top: 125%;
+        top: 110%;
         left: 5%;
     }
 
@@ -166,7 +185,9 @@
     .section-intro,
     .index-post-container,
     .index-category-container,
-    .category-desc {
+    .footer-container,
+    .category-desc,
+    .account-container {
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -181,12 +202,9 @@
     }
 
     .index-post-container,
-    .index-category-container {
+    .index-category-container,
+    .account-container {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .index-post-container,
-    .index-category-container {
         grid-gap: 5rem;
             gap: 5rem;
     }
@@ -216,9 +234,20 @@
         margin-right: 5%;
     }
 
+    .form-sign-in-container {
+        margin-top: .5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
 
 @media only screen and (min-width: 1100px) {
+
+    header {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 
     .nav-links-container,
     .nav-link {

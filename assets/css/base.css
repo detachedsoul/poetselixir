@@ -224,7 +224,7 @@ footer {
 
 .input,
 .nav-link {
-	padding: 0.7rem 1rem;
+	padding: .7rem 1rem;
 }
 
 .border-bottom-grey {
@@ -269,4 +269,8 @@ footer {
 
 .mb-2 {
 	margin-bottom: 2rem;
+}
+
+.breadcrumb-indicator {
+    top: .3rem;
 }
