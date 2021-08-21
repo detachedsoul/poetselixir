@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/logo.png">
+
+    <title>Poet's Elixir &mdash; Demo Uer Posts</title>
+
+    <!-- Preload stylesheets and scripts -->
+    <link rel="preload" href="assets/css/preloader.css" as="style">
+    <link rel="preload" href="assets/css/base.css" as="style">
+    <link rel="preload" href="assets/css/normalize.css" as="style">
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="assets/css/fonts.css" as="style">
+    <link rel="preload" href="assets/css/style.css" as="style">
+    <link rel="preload" href="assets/icons/uicons.css" as="style">
+    <link rel="preload" href="assets/icons/all.min.css" as="style">
+    <link rel="preload" href="assets/js/main.js" as="script">
+
+    <!-- Essential stylesheets -->
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+</head>
+<body class="bg-white black">
+
+
+    <!-- Preloader -->
+    <div class="preloader-container fixed w-100 bg-white grid place-center">
+ 
+        <div class="preloader-outer round"></div>
+        <div class="preloader-inner"></div>
+
+    </div>
+    
+    
+    <!-- Header -->
+    <header class="sticky bg-white shadow">
+
+        <a class="m-hidden" href="index.html">
+            <img class="logo" src="assets/img/logo.png" alt="Poet's Elixir" width="130" height="3%">
+        </a>
+
+        <!-- Mobile navigation controls -->
+        <div class="mobile-nav flex align-center justify-between lg-hidden">
+
+            <a class="nav-toggle" href="javascript:void(0)" aria-label="Navigation toggle button">
+                <span class="nav-toggle-icon d-block bg-black relative"></span>
+            </a>
+
+            <a href="index.html">
+                <img class="logo" src="assets/img/logo.png" alt="Poet's Elixir" width="130" height="3%">
+            </a>
+
+            <a class="search-toggle black" href="javascript:void(0)" title="Search toggle">
+                <i class="fr fi-rr-search relative nav-search-toggle"></i>
+            </a>
+
+        </div>
+
+        <!-- Navigation links -->
+        <nav class="nav-container fixed shadow">
+
+            <div class="nav-content-container bg-white">
+
+                <ul class="nav-links-container flex flex-column gap-half">
+
+                    <li class="nav-item list-style-none">
+                        <a class="nav-link black flex align-center gap-1" href="index.html">
+                            <i class="fr fi-rr-home nav-link-icon relative"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item list-style-none relative">
+
+                        <a class="nav-link dropdown-toggle black flex align-center gap-1" href="javascript:void(0)">
+                            <i class="fr fi-rr-settings nav-link-icon relative"></i>
+                            Categories
+                        </a>
+
+                        <div class="dropdown absolute bg-white border-7 shadow">
+
+                            <ul class="flex flex-column gap-half">
+
+                                <li class="list-style-none dropdown-items">
+                                    <a class="dropdown-link black d-block" href="category.html">
+                                        Sadness
+                                    </a>
+                                </li>
+            
+                                <li class="list-style-none dropdown-items">
+                                    <a class="dropdown-link black d-block" href="category.html">
+                                        Depression
+                                    </a>
+                                </li>
+                                
+                                <li class="list-style-none dropdown-items">
+                                    <a class="dropdown-link black d-block" href="category.html">
+                                        Detachedsoul
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item list-style-none">
+                        <a class="nav-link black flex align-center gap-1" href="admin.html">
+                            <i class="fr fi-rr-user nav-link-icon relative"></i>
+                            Admin
+                        </a>
+                    </li>
+
+                    <li class="nav-item list-style-none">
+                        <a class="nav-link black flex align-center gap-1" href="account.html">
+                            <i class="fr fi-rr-user-add nav-link-icon relative"></i>
+                            Account
+                        </a>
+                    </li>
+
+                    <li class="nav-item list-style-none">
+                        <a class="nav-link black flex align-center gap-1" href="contact.html">
+                            <i class="fr fi-rr-envelope nav-link-icon relative"></i>
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <form class="search-container absolute flex shadow border-5" action="search.html" method="get">
+
+            <label class="w-100 shadow border-5" for="search-input">
+                <input class="input search-input bg-white w-100 black" type="search" name="search" id="search-input" placeholder="Search">
+            </label>
+
+            <button class="search-btn shadow white" type="submit" aria-label="Search button">
+                <i class="fr fi-rr-search relative nav-link-icon"></i>
+            </button>
+
+        </form>
+
+    </header>
+
+
+    <!-- Main content -->
+    <main>
+
+        <section class="section mb-2">
+
+            <div class="section-intro flex align-center flex-wrap gap-half border-bottom-grey">
+
+                <a class="blue link" href="index.html">
+                    Home
+                </a>
+
+                <i class="breadcrumb-indicator fr fi-rr-angle-small-right blue relative"></i>
+
+                <a class="blue link" href="view-all.html">
+                    Posts
+                </a>
+
+                <i class="breadcrumb-indicator fr fi-rr-angle-small-right blue relative"></i>
+
+                <a class="black breadcrumb-active" href="javascript:void(0)">
+                    Detachedsoul's Posts
+                </a>
+
+            </div>
+
+            <div class="category-desc mt-2 mb-2">
+
+                <h1 class="header">
+                    Detachedsoul
+                </h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi veritatis praesentium a non corrupti repellat sunt quo optio autem reprehenderit?
+                </p>
+
+            </div>
+
+            <div class="index-category-container mt-2 mb-2 grid gap-2">
+
+                <article>
+                    
+                    <img class="index-post-img w-100 border-7" src="assets/img/pic-1.png" alt="Flowers On Your Grave" width="100%" height="200" title="Flowers On Your Grave">
+
+                    <div class="mt-1 flex align-center gap-1">
+
+                        <a class="main-color link" href="category.html">
+                            Detachment
+                        </a>
+
+                        &bull;
+
+                        <span>
+                            12 June, 2021
+                        </span>
+
+                    </div>
+
+                    <h2 class="post-title">
+                        <a class="main-color link" href="post.html">
+                            Flowers On Your Grave
+                        </a>
+                    </h2>
+
+                    <div class="post-details border-bottom-grey">
+
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quasi optio laboriosam laudantium aliquid porro incidunt, esse nihil non a repudiandae cupiditate ex quam. Necessitatibus illo voluptatibus explicabo error atque.
+                        </p>
+
+                        <p>
+                            <a class="main-color link flex align-center gap-half d-inline" href="post.html">
+                                Continue Reading
+                                <i class="fas fa-fw fa-arrow-right"></i>
+                            </a>
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article>
+                    
+                    <img class="index-post-img w-100 border-7" src="assets/img/pic-2.jpg" alt="Flowers On Your Grave" width="100%" height="200" title="Flowers On Your Grave">
+
+                    <div class="mt-1 flex align-center gap-1">
+
+                        <a class="main-color link" href="category.html">
+                            Sadness
+                        </a>
+
+                        &bull;
+
+                        <span>
+                            12 June, 2021
+                        </span>
+
+                    </div>
+
+                    <h2 class="post-title">
+                        <a class="main-color link" href="post.html">
+                            Flowers On Your Grave
+                        </a>
+                    </h2>
+
+                    <div class="post-details border-bottom-grey">
+
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quasi optio laboriosam laudantium aliquid porro incidunt, esse nihil non a repudiandae cupiditate ex quam. Necessitatibus illo voluptatibus explicabo error atque.
+                        </p>
+
+                        <p>
+                            <a class="main-color link flex align-center gap-half d-inline" href="post.html">
+                                Continue Reading
+                                <i class="fas fa-fw fa-arrow-right"></i>
+                            </a>
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article>
+                    
+                    <img class="index-post-img w-100 border-7" src="assets/img/pic-3.jpg" alt="Flowers On Your Grave" width="100%" height="200" title="Flowers On Your Grave">
+
+                    <div class="mt-1 flex align-center gap-1">
+
+                        <a class="main-color link" href="category.html">
+                            Depression
+                        </a>
+
+                        &bull;
+
+                        <span>
+                            12 March, 2021
+                        </span>
+
+                    </div>
+
+                    <h2 class="post-title">
+                        <a class="main-color link" href="post.html">
+                            Flowers On Your Grave
+                        </a>
+                    </h2>
+
+                    <div class="post-details border-bottom-grey">
+
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quasi optio laboriosam laudantium aliquid porro incidunt, esse nihil non a repudiandae cupiditate ex quam. Necessitatibus illo voluptatibus explicabo error atque.
+                        </p>
+
+                        <p>
+                            <a class="main-color link flex align-center gap-half d-inline" href="post.html">
+                                Continue Reading
+                                <i class="fas fa-fw fa-arrow-right"></i>
+                            </a>
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article>
+                    
+                    <img class="index-post-img w-100 border-7" src="assets/img/pic-4.jpg" alt="Flowers On Your Grave" width="100%" height="200" title="Flowers On Your Grave">
+
+                    <div class="mt-1 flex align-center gap-1">
+
+                        <a class="main-color link" href="category.html">
+                            Anxiety
+                        </a>
+
+                        &bull;
+
+                        <span>
+                            12 June, 2021
+                        </span>
+
+                    </div>
+
+                    <h2 class="post-title">
+                        <a class="main-color link" href="post.html">
+                            Flowers On Your Grave
+                        </a>
+                    </h2>
+
+                    <div class="post-details border-bottom-grey">
+
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quasi optio laboriosam laudantium aliquid porro incidunt, esse nihil non a repudiandae cupiditate ex quam. Necessitatibus illo voluptatibus explicabo error atque.
+                        </p>
+
+                        <p>
+                            <a class="main-color link flex align-center gap-half d-inline" href="post.html">
+                                Continue Reading
+                                <i class="fas fa-fw fa-arrow-right"></i>
+                            </a>
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article>
+                    
+                    <img class="index-post-img w-100 border-7" src="assets/img/pic-5.jpg" alt="Flowers On Your Grave" width="100%" height="200" title="Flowers On Your Grave">
+
+                    <div class="mt-1 flex align-center gap-1">
+
+                        <a class="main-color link" href="category.html">
+                            Love
+                        </a>
+
+                        &bull;
+
+                        <span>
+                            12 June, 2021
+                        </span>
+
+                    </div>
+
+                    <h2 class="post-title">
+                        <a class="main-color link" href="post.html">
+                            Flowers On Your Grave
+                        </a>
+                    </h2>
+
+                    <div class="post-details border-bottom-grey">
+
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quasi optio laboriosam laudantium aliquid porro incidunt, esse nihil non a repudiandae cupiditate ex quam. Necessitatibus illo voluptatibus explicabo error atque.
+                        </p>
+
+                        <p>
+                            <a class="main-color link flex align-center gap-half d-inline" href="post.html">
+                                Continue Reading
+                                <i class="fas fa-fw fa-arrow-right"></i>
+                            </a>
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article>
+                    
+                    <img class="index-post-img w-100 border-7" src="assets/img/pic-6.jpeg" alt="Flowers On Your Grave" width="100%" height="200" title="Flowers On Your Grave">
+
+                    <div class="mt-1 flex align-center gap-1">
+
+                        <a class="main-color link" href="category.html">
+                            Lonesome
+                        </a>
+
+                        &bull;
+
+                        <span>
+                            12 March, 2021
+                        </span>
+
+                    </div>
+
+                    <h2 class="post-title">
+                        <a class="main-color link" href="post.html">
+                            Flowers On Your Grave
+                        </a>
+                    </h2>
+
+                    <div class="post-details border-bottom-grey">
+
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quasi optio laboriosam laudantium aliquid porro incidunt, esse nihil non a repudiandae cupiditate ex quam. Necessitatibus illo voluptatibus explicabo error atque.
+                        </p>
+
+                        <p>
+                            <a class="main-color link flex align-center gap-half d-inline" href="post.html">
+                                Continue Reading
+                                <i class="fas fa-fw fa-arrow-right"></i>
+                            </a>
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <div class="pagination-container flex align-center justify-between flex-wrap mb-2 gap-2">
+
+            <a class="black" href="">
+                <i class="fas fa-arrow-left fa-fw"></i> Previous
+            </a>
+
+            <ul class="pagination-links-container flex justify-between align-center gap-half flex-wrap">
+
+                <li class="list-style-none">
+                    <a class="pagination-link black" href="">
+                        1
+                    </a>
+                </li>
+
+                <li class="list-style-none">
+                    <a class="pagination-link black active" href="">
+                        2
+                    </a>
+                </li>
+
+                <li class="list-style-none">
+                    <a class="pagination-link pagination-divider black" href="">
+                        &bull; &bull; &bull;
+                    </a>
+                </li>
+
+                <li class="list-style-none">
+                    <a class="pagination-link black" href="">
+                        3
+                    </a>
+                </li>
+
+                <li class="list-style-none">
+                    <a class="pagination-link black" href="">
+                        4
+                    </a>
+                </li>
+
+            </ul>
+
+            <a class="black" href="">
+                Next <i class="fas fa-arrow-right fa-fw"></i>
+            </a>
+
+        </div>
+
+    </main>
+
+    
+    <footer>
+        
+        <div class="footer-container grid gap-1">
+
+            <div class="flex flex-column gap-half mb-1">
+            
+                <h3 class="footer-header">
+                    Recent Posts
+                </h3>
+
+                <ul class="flex flex-column gap-1">
+                    
+                    <li class="list-style-none">
+                        <a class="blue link" href="post.html">
+                            Flowers On Your Grave
+                        </a>
+                    </li>
+
+                    <li class="list-style-none">
+                        <a class="blue link" href="post.html">
+                            Silent Seduction
+                        </a>
+                    </li>
+
+                    <li class="list-style-none">
+                        <a class="blue link" href="post.html">
+                            The Forsaken
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="flex flex-column gap-half mb-1">
+            
+                <h3 class="footer-header">
+                    About
+                </h3>
+
+                <p>
+                    Poetry is medicine for the soul, an avenue through which we express our innermost thoughts and give interpretations of nature and the things around us.
+                </p>
+
+                <p>
+                    <a class="blue link" href="/">
+                        Poet's Elixir
+                    </a> 
+                    provides an avenue where we can share our beautiful poems for the enjoyment of others.
+                </p>
+
+            </div>
+
+            <div class="flex flex-column gap-half mb-1">
+            
+                <h3 class="footer-header">
+                    We Are Social!
+                </h3>
+
+                <p>
+                    Have a poem or a suggestion for us, a feature you'll like us to add or a bug to report? We'll love to hear from you.
+                </p>
+
+                <p class="flex gap-1 flex-wrap">
+
+                    <a class="footer-icon round bg-white black shadow" href="https://www.facebook.com/IamWisdomOjimah" target="_blank" title="Facebook" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a class="footer-icon round bg-white black shadow" href="https://github.com/detachedsoul" target="_blank" title="Github" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a class="footer-icon round bg-white black shadow" href="https://wa.me/+2348067589085" target="_blank" title="WhatsApp" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                    <a class="footer-icon round bg-white black shadow" href="https://www.linkedin.com/in/wisdom-ojimah-9a4466186/" target="_blank"
+                        title="LinkedIn" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a class="footer-icon round bg-white black shadow" href="mailto: vindicatedwisdom@gmail.com" target="_blank" title="Email" rel="noopener noreferrer">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+
+                </p>
+
+                <p>
+                    You can also send us a direct message using the 
+                    <a class="blue link" href="contact.html">
+                        contact form.
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright white grid gap-half text-center">
+
+            <p>
+                <i class="far fa-copyright"></i>
+                2020 ─ 2021. All rights reserved.
+            </p>
+
+            <p>
+                All poems are intellectual properties of their respective owners.
+            </p>
+
+            <p>
+                Created with all the <i class="far fa-heart"></i> in the world by 
+                <a class="link" href="https://web.facebook.com/IamWisdomOjimah">
+                    Wisdom Ojimah.
+                </a>
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <a class="to-top fixed white shadow border-5" href="javascript:void(0)" aria-label="Scroll to top button">
+        <i class="fr fi-rr-angle-up relative"></i>
+    </a>
+
+
+    <!-- Scripts and stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/icons/uicons.css">
+    <link rel="stylesheet" href="assets/icons/all.min.css">
+    <script src="assets/js/main.js" defer></script>
+    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js" defer crossorigin="anonymous"></script>
+
+</body>
+</html>

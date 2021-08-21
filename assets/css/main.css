@@ -84,6 +84,7 @@ header,
 
 .nav-links-container,
 .section-intro,
+.post-details,
 .copyright {
     padding-bottom: 1rem;
 }
@@ -223,8 +224,7 @@ header,
 }
 
 .discover-more,
-.pagination-container,
-.comments-container{
+.pagination-container {
     margin-top: 7rem;
 }
 
@@ -344,6 +344,10 @@ header,
 .sidebar-img {
     width: 100px;
     height: 50px;
+}
+
+.comments-container {
+    margin-top: 5rem;
 }
 
 .comment {

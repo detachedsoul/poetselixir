@@ -8,7 +8,7 @@ I basically design as ideas come. I am not a designer but a developer so the des
 
 ## Polyfill
 
-Since iOS doesn't support ```scroll-behavior: smooth;```, I added a polyfill. You can get the polyfill here: [smooth scroll pollyfill](https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js)
+Since iOS doesn't support ```scroll-behavior: smooth;```, I added a polyfill. You can get the polyfill here: [smoothscroll-pollyfill](https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js)
 
 ## Live Demo and Source Code
 

@@ -74,7 +74,8 @@ textarea {
 	outline: none;
 }
 
-input:not(input[type="checkbox"]) {
+input:not(input[type="checkbox"]),
+textarea {
 	-webkit-appearance: none;
 }
 
