@@ -1,12 +1,14 @@
 :root {
-	--blue: #6664be;
+	--blue: #2726a4;
 	--black: #030313;
-	--white: #fefeff;
-	--main-bg: #ececf9;
+	--white: #ffffff;
+	--main-color: #094758;
 	--grey: #c6c6cf;
+	--red: #A50104;
 	--nunito: Nunito;
 	--open-sans: "Open Sans";
 	--poppins: "Poppins";
+	--luckiest-guy: "Luckiest Guy";
 }
 
 *,
@@ -24,13 +26,27 @@ h6 {
 	line-height: 1.5;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	/* transition: all .5s; */
+	transition: padding linear .5s,
+				transform ease-in-out .5s;
 }
 
 body {
 	-webkit-font-smoothing: antialiased;
 	font-family: var(--nunito);
 	font-size: 1.15rem;
+    font-weight: 100;
+}
+
+h1 {
+    margin-bottom: .25rem;
+    font-size: 1.749690125em;
+    font-weight: 700;
+}
+
+header {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    z-index: 1024;
 }
 
 a {
@@ -62,10 +78,12 @@ input:not(input[type="checkbox"]) {
 	-webkit-appearance: none;
 }
 
-input,
+input, 
 button,
 textarea,
-.nav-link-icon {
+.nav-link-icon,
+.fi-rr-copyright,
+.breadcrumb-indicator {
 	font-size: 1rem;
 }
 
@@ -73,8 +91,12 @@ button {
 	cursor: pointer;
 }
 
+textarea {
+	resize: vertical;
+}
+
 footer {
-	background-color: #f0f6f6;
+	background-color: #f0f0f0;
 }
 
 .flex {
@@ -173,10 +195,18 @@ footer {
 	font-size: 1.2rem;
 }
 
-.blue,
+.red {
+	color: var(--red);
+}
+
+.blue {
+	color: var(--blue);
+}
+
+.main-color,
 .pagination-link:hover,
 .pagination-link.active {
-	color: var(--blue);
+	color: var(--main-color);
 }
 
 .white,
@@ -190,6 +220,10 @@ footer {
 
 .black {
 	color: var(--black);
+}
+
+.grey-color {
+	color: var(--grey);
 }
 
 .border-7 {
@@ -208,8 +242,16 @@ footer {
 	list-style-type: none;
 }
 
-.main-bg {
-	background-color: var(--main-bg);
+.main-bg,
+.nav-link:hover,
+.nav-link-active,
+.dropdown-link:hover,
+.dropdown-link-active,
+.search-btn,
+.to-top,
+.submit-btn,
+input[type="checkbox"] {
+	background-color: var(--main-color);
 }
 
 .bg-white {
@@ -227,6 +269,10 @@ footer {
 	padding: .7rem 1rem;
 }
 
+.border-top-grey {
+	border-top: 1px solid var(--grey);
+}
+
 .border-bottom-grey {
 	border-bottom: 1px solid var(--grey);
 }
@@ -235,7 +281,8 @@ footer {
 	text-decoration: underline;
 }
 
-.shadow {
+.shadow,
+.comment:hover {
 	box-shadow: 5px 6px 20px 0 rgba(0 0 0 / 5%);
 }
 
@@ -246,7 +293,7 @@ footer {
 
 .post-title,
 .footer-header {
-	font-family: "Luckiest Guy";
+	font-family: var(--luckiest-guy);
 	font-weight: 100;
 }
 

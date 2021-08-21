@@ -11,6 +11,12 @@
 }
 
 @font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Poppins';
     src: url('../fonts/Poppins.ttf') format('truetype');
     font-display: swap;

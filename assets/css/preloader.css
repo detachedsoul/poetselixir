@@ -1,7 +1,7 @@
 .preloader-container {
     top: 0;
     height: 100vh;
-    z-index: 1024;
+    z-index: 9999999999;
 }
 
 .preloader-outer,

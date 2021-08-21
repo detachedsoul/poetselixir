@@ -8,9 +8,9 @@ I basically design as ideas come. I am not a designer but a developer so the des
 
 ## Polyfill
 
-Since iOS doesn't support ```css scroll-behavior: smooth;```, I added a polyfill. You can get the polyfill here: [smooth scroll pollyfill]("https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js")
+Since iOS doesn't support ```scroll-behavior: smooth;```, I added a polyfill. You can get the polyfill here: [smooth scroll pollyfill](https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js)
 
 ## Live Demo and Source Code
 
 - The live demo can be found here: [poetselixir](https://detachedsoul.github.io/poetselixir)
-- The source code can be found here: [sourec code](https://github.com/detachedsoul/poetselixir)
+- The source code can be found here: [source code](https://github.com/detachedsoul/poetselixir)

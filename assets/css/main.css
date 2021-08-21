@@ -2,33 +2,27 @@
     --main-blue: #6664be;
     /* --black: #292b41; */
     --green: #42c284;
-    --dark-blue: #2726a4;
     /* --color-1: #d7d7f0; */
     --orange: #ff7c4a;
 }
 
-header {
+header,
+.nav-toggle-close .nav-toggle-icon::before,
+.nav-toggle-close .nav-toggle-icon::after {
     top: 0;
-    padding-top: .1rem;
-    padding-bottom: .1rem;
-}
-
-input, 
-button,
-textarea,
-.nav-link-icon,
-.fi-rr-copyright,
-.breadcrumb-indicator {
-    font-size: 1rem;
 }
 
 .mobile-nav,
+.search-btn,
 .index-post-container,
 .index-category-container,
 .footer-container,
 .copyright,
 .category-desc,
-.account-container {
+.account-container,
+.post-content,
+.comments-container,
+.sidebar-container {
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -36,10 +30,6 @@ textarea,
 .logo {
     width: 120px;
     height: 3%;
-}
-
-.nav-search-toggle {
-    font-size: 1.2rem;
 }
 
 .nav-toggle {
@@ -69,7 +59,6 @@ textarea,
 
 .nav-toggle-close .nav-toggle-icon::before,
 .nav-toggle-close .nav-toggle-icon::after {
-    top: 0;
     transform: rotate(45deg);
 }
 
@@ -95,7 +84,6 @@ textarea,
 
 .nav-links-container,
 .section-intro,
-.post-details,
 .copyright {
     padding-bottom: 1rem;
 }
@@ -111,20 +99,12 @@ textarea,
     border-bottom-left-radius: 5rem;
 }
 
-.nav-link:hover,
-.nav-link-active,
-.dropdown-link:hover,
-.dropdown-link-active {
-    background-color: var(--blue);
-}
-
 .dropdown {
     width: calc(100% - 1rem);
     right: .5rem;
     z-index: 1024;
     top: 120%;
     transform: rotateX(90deg);
-    border: 1px solid rgba(102 100 190 / 50%);
 }
 
 .dropdown,
@@ -182,7 +162,14 @@ textarea,
 
 .search-input {
     border-right-color: transparent;
-    border: 1px solid rgba(102 100 190 / 50%);
+}
+
+.search-input,
+.form-icons,
+.form-input,
+.form-input.form-input-border-all {
+    border-right-color: transparent;
+    border: 1px solid var(--grey);
 }
 
 .search-input,
@@ -193,25 +180,13 @@ textarea,
 
 .search-input:focus,
 .form-input:focus {
-    box-shadow: 0px 0px 0px 4px rgb(102 100 190 / 10%);
-}
-
-.search-btn {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    box-shadow: 0px 0px 0px 4px rgb(102 100 190 / 5%);
 }
 
 .search-btn,
 .form-input {
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
-}
-
-.search-btn,
-.to-top,
-.submit-btn,
-input[type="checkbox"] {
-    background-color: var(--blue);
 }
 
 .hero-container {
@@ -243,9 +218,14 @@ input[type="checkbox"] {
 }
 
 .discover-more {
-    margin-top: 5rem;
     margin-bottom: 5rem;
     font-size: 2rem;
+}
+
+.discover-more,
+.pagination-container,
+.comments-container{
+    margin-top: 7rem;
 }
 
 .footer-container {
@@ -272,6 +252,14 @@ input[type="checkbox"] {
     padding-right: .1rem;
 }
 
+.copyright {
+    background-color: #373433;
+}
+
+.copyright a {
+    color: #c2d4f1;
+}
+
 .to-top {
     padding: .5rem .7rem;
     bottom: 2rem;
@@ -283,7 +271,6 @@ input[type="checkbox"] {
 }
 
 .pagination-container {
-    margin-top: 5rem;
     margin-left: 1rem;
     margin-right: 1rem;
     padding-top: 1.1rem;
@@ -296,14 +283,13 @@ input[type="checkbox"] {
 
 .pagination-link:hover,
 .pagination-link.active {
-    border-top: 3px solid var(--blue);
+    border-top: 3px solid var(--main-color);
 }
 
 .form-icons,
 .form-input,
 .form-input.form-input-border-all {
     padding: .4rem .35rem .4rem .7rem;
-    border: 1px solid var(--grey);
 }
 
 .form-icons {
@@ -323,9 +309,48 @@ input[type="checkbox"] {
     padding-top: .6rem;
     padding-bottom: .6rem;
 }
-
+  
 .submit-btn {
-    width: max-content;
     padding: .5rem 1rem;
     margin-left: auto;
+}
+
+.submit-btn,
+.sidebar-link {
+    width: max-content;       
+}
+
+.post-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.post-img {
+    height: 250px;
+}
+
+.post-owner {
+    font-family: 'Pacifico';
+    font-size: x-large;
+    font-weight: 100;
+}
+
+.sidebar-links-container {
+    grid-template-columns: 3fr 10fr;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.sidebar-img {
+    width: 100px;
+    height: 50px;
+}
+
+.comment {
+    padding: 1rem;
+}
+
+.commenter-img {
+    width: 50px;
+    height: 50px;
 }
