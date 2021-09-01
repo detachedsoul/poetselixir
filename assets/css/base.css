@@ -3,8 +3,9 @@
 	--black: #030313;
 	--white: #ffffff;
 	--main-color: #094758;
+	--complementary-color: #581A09;
 	--grey: #c6c6cf;
-	--red: #A50104;
+	--red: #a50104;
 	--nunito: Nunito;
 	--open-sans: "Open Sans";
 	--poppins: "Poppins";
@@ -77,6 +78,12 @@ textarea {
 input:not(input[type="checkbox"]),
 textarea {
 	-webkit-appearance: none;
+}
+
+input[type="checkbox"]:checked {
+	background-color: red;
+	appearance: button;
+	-webkit-appearance: button;
 }
 
 input, 
@@ -208,6 +215,10 @@ footer {
 .pagination-link:hover,
 .pagination-link.active {
 	color: var(--main-color);
+}
+
+.complementary-color {
+	color: var(--complementary-color)
 }
 
 .white,

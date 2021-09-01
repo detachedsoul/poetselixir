@@ -6,12 +6,15 @@ window.onload = () => {
 };
 
 let toTopBtn = document.querySelector('.to-top');
+let header = document.querySelector('header');
 
 window.onscroll = () => {
     if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) {
         toTopBtn.classList.add('show-to-top');
+        header.classList.add('shadow');
     } else {
         toTopBtn.classList.remove('show-to-top');
+        header.classList.remove('shadow');
     }
 };
 

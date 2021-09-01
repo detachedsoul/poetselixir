@@ -20,6 +20,7 @@ header,
 .copyright,
 .category-desc,
 .account-container,
+.contact-container,
 .post-content,
 .comments-container,
 .sidebar-container {
@@ -169,7 +170,6 @@ header,
 .form-icons,
 .form-input,
 .form-input.form-input-border-all {
-    border-right-color: transparent;
     border: 1px solid var(--grey);
 }
 
@@ -201,7 +201,8 @@ header,
 }
 
 .hero-content,
-.section-intro {
+.section-intro,
+.admin-details {
     padding-left: .5rem;
     padding-right: .5rem;
 }
@@ -316,7 +317,8 @@ header,
 }
 
 .submit-btn,
-.sidebar-link {
+.sidebar-link,
+.admin-post-link {
     width: max-content;       
 }
 
@@ -357,4 +359,12 @@ header,
 .commenter-img {
     width: 50px;
     height: 50px;
+}
+
+.contact-container {
+    max-width: 100vw;
+}
+
+.contact-form {
+    max-width: 100vw;
 }

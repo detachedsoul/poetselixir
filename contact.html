@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/img/logo.png">
 
-    <title>Poet's Elixir &mdash; Account</title>
+    <title>Poet's Elixir &mdash; Contact</title>
 
     <!-- Preload stylesheets and scripts -->
     <link rel="preload" href="assets/css/preloader.css" as="style">
@@ -119,14 +119,14 @@
                     </li>
 
                     <li class="nav-item list-style-none">
-                        <a class="nav-link black flex align-center gap-1 nav-link-active" href="account.html">
+                        <a class="nav-link black flex align-center gap-1" href="account.html">
                             <i class="fr fi-rr-user-add nav-link-icon relative"></i>
                             Account
                         </a>
                     </li>
 
                     <li class="nav-item list-style-none">
-                        <a class="nav-link black flex align-center gap-1" href="contact.html">
+                        <a class="nav-link black flex align-center gap-1 nav-link-active" href="contact.html">
                             <i class="fr fi-rr-envelope nav-link-icon relative"></i>
                             Contact
                         </a>
@@ -167,152 +167,78 @@
                 <i class="breadcrumb-indicator fr fi-rr-angle-small-right blue relative"></i>
 
                 <a class="black breadcrumb-active" href="javascript:void(0)">
-                    Account
+                    Contact
                 </a>
 
             </div>
 
-            <div class="account-container mt-2 mb-2 grid gap-2">
+            <div class="contact-container mt-2 mb-2 grid gap-2">
 
-                <form class="flex flex-column gap-1 mt-1" action="" method="POST">
+                <div>
+                    
+                    <h2 class="header">
+                        Let's talk about everything
+                    </h2>
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, enim odio iusto quidem, quo saepe nihil cumque molestiae ullam nobis, reprehenderit ex rerum non labore facere error quam ratione architecto?
+                    </p>
+
+                </div>
+
+                <form class="flex flex-column gap-1 mt-1 relative" action="" method="POST">
 
                     <h3 class="header">
-                        Sign In
+                        Fill the form. It's easy.
                     </h3>
 
-                    <span class="mb-1">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, quia minus. Libero esse quia dolor alias deleniti consequatur?
-                    </span>
+                    <div class="contact-form-container grid gap-1">
 
-                    <div class="form-sign-in-container grid gap-2 border-bottom-grey">
+                        <div class="flex flex-column gap-half">
 
-                        <div>
-
-                            <label class="form-input-label flex" for="username">
-
-                                <span class="form-icons black">
-                                    <i class="fr fi-rr-envelope relative"></i>
-                                </span>
-
-                                <input class="form-input w-100 bg-white black" type="text" placeholder="Username" id="username" name="username">
-
+                            <label class="black" for="name">
+                                Name <span class="red">*</span>
                             </label>
+
+                            <input class="form-input form-input-border-all w-100 bg-white black border-5" type="text" id="name" name="name">
 
                         </div>
 
-                        <div>
+                        <div class="flex flex-column gap-half">
 
-                            <label class="form-input-label flex" for="password">
-
-                                <span class="form-icons black">
-                                    <i class="fr fi-rr-lock relative"></i>
-                                </span>
-
-                                <input class="form-input w-100 bg-white black" type="password" placeholder="Password" id="password" name="password">
-
+                            <label class="black" for="email">
+                                Email <span class="red">*</span>
                             </label>
+
+                            <input class="form-input form-input-border-all w-100 bg-white black border-5" type="text" id="email" name="email">
 
                         </div>
 
-                        <div class="flex align-center justify-between gap-half flex-wrap">
+                        <div class="flex flex-column gap-half">
 
-                            <label for="remember">
-                                <input type="checkbox" name="remember" id="remember">
-                                Remember me
+                            <label class="black" for="subject">
+                                Subject
                             </label>
 
-                            <a class="main-color" href="forgot.html">
-                                Forgot password?
-                            </a>
+                            <input class="form-input form-input-border-all w-100 bg-white black border-5" type="text" id="subject" name="subject">
+
+                        </div>
+
+                        <div class="flex flex-column gap-half">
+
+                            <label class="black" for="comment">
+                                Compose Message <span class="red">*</span>
+                            </label>
+
+                            <textarea class="form-input form-input-border-all w-100 bg-white black border-5" type="text" id="comment" name="comment" placeholder="Compose Message" rows="7"></textarea>
 
                         </div>
 
                     </div>
 
-                    <button class="submit-btn white flex gap-half align-center border-5" type="submit" name="sign_in">
-                        <i class="fr fi-rr-sign-out relative"></i> 
-                        Sign In
-                    </button>
-
-                </form>
-
-                <form class="flex flex-column gap-1 mt-1" action="" method="POST">
-
-                    <h3 class="header">
-                        No account? Sign up
-                    </h3>
-
-                    <span class="mb-1">
-                        Registration takes less than a minute but gives you added privileges.
-                    </span>
-
-                    <div class="form-sign-up-container grid gap-1">
-
-                        <div class="flex flex-column gap-half">
-
-                            <label class="black" for="firstName">
-                                First Name
-                            </label>
-
-                            <input class="form-input form-input-border-all w-100 bg-white black border-5" type="text" id="firstName" name="firstName">
-
-                        </div>
-
-                        <div class="flex flex-column gap-half">
-
-                            <label class="black" for="lastName">
-                                Last Name
-                            </label>
-
-                            <input class="form-input form-input-border-all w-100 bg-white black border-5" type="text" id="lastName" name="lastName">
-
-                        </div>
-
-                        <div class="flex flex-column gap-half">
-
-                            <label class="black" for="signUpUsername">
-                                Username
-                            </label>
-
-                            <input class="form-input form-input-border-all w-100 bg-white black border-5" type="text" id="signUpUsername" name="signUpUsername">
-
-                        </div>
-
-                        <div class="flex flex-column gap-half">
-
-                            <label class="black" for="SignUpEmail">
-                                Email
-                            </label>
-
-                            <input class="form-input form-input-border-all w-100 bg-white black border-5" type="text" id="SignUpEmail" name="SignUpEmail">
-
-                        </div>
-
-                        <div class="flex flex-column gap-half">
-
-                            <label class="black" for="SignUpPassword">
-                                Password
-                            </label>
-
-                            <input class="form-input form-input-border-all w-100 bg-white black border-5" type="text" id="SignUpPassword" name="SignUpPassword">
-
-                        </div>
-
-                        <div class="flex flex-column gap-half">
-
-                            <label class="black" for="verifyPassword">
-                                Confirm Password
-                            </label>
-
-                            <input class="form-input form-input-border-all w-100 bg-white black border-5" type="text" id="verifyPassword" name="verifyPassword">
-
-                        </div>
-
-                    </div>
-
-                    <button class="submit-btn white flex gap-half align-center border-5" type="submit" name="sign_up">
-                        <i class="fr fi-rr-user relative"></i> 
-                        Sign Up
+                    <button class="submit-btn white flex gap-half align-center border-5" type="submit" name="send_message">
+                        Send Message
+                        <i class="fr fi-rr-cursor-finger relative"></i> 
                     </button>
 
                 </form>
